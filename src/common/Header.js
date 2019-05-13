@@ -8,7 +8,7 @@ export default class Header extends Component {
     return (
       <div>
         <nav
-          className="navbar navbar-expand-sm fixed-top border-bottom shadow-lg navbar-light"
+          className="navbar navbar-expand-lg fixed-top border-bottom shadow-lg navbar-light"
           style={{ backgroundColor: "#f4f6f7" }}
         >
           <div className="container">
@@ -18,7 +18,7 @@ export default class Header extends Component {
                   src={logo}
                   className="navbar-brand"
                   width="90"
-                  height="90"
+                  height="50"
                   alt="Company Logo"
                 />
                 <span
