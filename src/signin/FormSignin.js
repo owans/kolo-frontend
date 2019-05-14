@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 import { Link, withRouter } from "react-router-dom";
+import env from "../env";
 import "./signin.css";
 
 const nameRegex = RegExp(/^[a-zA-Z]+$/);
@@ -19,107 +20,109 @@ const app = ({ touched, errors, isSubmitting }) => (
         Welcome to the future of Savings & Investments
       </h6>
     </div>
-    <div className="d-flex justify-content-center">
-      <div class="main_container rounded">
-        <Form name="form" className="form_container">
-          <div class="form-row">
-            <div className=" form-group col-sm">
-              <label htmlFor="first_name">First Name</label>
+    <Form name="form">
+      <div className="d-flex justify-content-center">
+        <div className="main_container " style={{ width: 800 }}>
+          <div className="form_container rounded">
+            <div className="form-row">
+              <div className=" form-group col-sm">
+                <label htmlFor="first_name">First Name</label>
+                <Field
+                  type="text"
+                  className="form-control"
+                  name="first_name"
+                  placeholder="First Name"
+                />
+                {touched.first_name && errors.first_name && (
+                  <p className="error-message">{errors.first_name}</p>
+                )}
+              </div>
+
+              <div className=" form-group col-sm">
+                <label htmlFor="last_name">Last Name</label>
+                <Field
+                  type="text"
+                  className="form-control"
+                  name="last_name"
+                  placeholder="Last Name"
+                />
+                {touched.last_name && errors.last_name && (
+                  <p className="error-message">{errors.last_name}</p>
+                )}
+              </div>
+              <p id="emailHelp" style={{ fontFamily: "Cutive Mono" }}>
+                NB: First Name and Last Name should match bank account name.
+              </p>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <Field
+                type="email"
+                name="email"
+                placeholder="Email"
+                className="form-control"
+              />
+              {touched.email && errors.email && (
+                <p className="error-message">{errors.email}</p>
+              )}
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="phone_number">Phone</label>
               <Field
                 type="text"
                 className="form-control"
-                name="first_name"
-                placeholder="First Name"
+                name="phone_number"
+                placeholder="Phone"
               />
-              {touched.first_name && errors.first_name && (
-                <p className="error-message">{errors.first_name}</p>
+              {touched.phone_number && errors.phone_number && (
+                <p className="error-message">{errors.phone_number}</p>
               )}
             </div>
 
-            <div className=" form-group col-sm">
-              <label htmlFor="last_name">Last Name</label>
-              <Field
-                type="text"
-                className="form-control"
-                name="last_name"
-                placeholder="Last Name"
-              />
-              {touched.last_name && errors.last_name && (
-                <p className="error-message">{errors.last_name}</p>
-              )}
+            <div className="form-row">
+              <div className="form-group col-sm">
+                <label htmlFor="password">Password</label>
+                <Field
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  className="form-control"
+                />
+                {touched.password && errors.password && (
+                  <p className="error-message">{errors.password}</p>
+                )}
+              </div>
+
+              <div className="form-group col-sm">
+                <label htmlFor="confirmpassword">Confirm Password</label>
+                <Field
+                  type="password"
+                  className="form-control"
+                  name="confirmpassword"
+                  placeholder="Confirm Password"
+                />
+                {touched.confirmpassword && errors.confirmpassword && (
+                  <p className="error-message">{errors.confirmpassword}</p>
+                )}
+              </div>
             </div>
-            <p id="emailHelp" style={{ fontFamily: "Cutive Mono" }}>
-              NB: First Name and Last Name should match bank account name.
-            </p>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <Field
-              type="email"
-              name="email"
-              placeholder="Enter Email"
-              className="form-control"
-            />
-            {touched.email && errors.email && (
-              <p className="error-message">{errors.email}</p>
-            )}
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="phone_number">Phone</label>
-            <Field
-              type="text"
-              className="form-control"
-              name="phone_number"
-              placeholder="Phone"
-            />
-            {touched.phone_number && errors.phone_number && (
-              <p className="error-message">{errors.phone_number}</p>
-            )}
-          </div>
-
-          <div class="form-row">
-            <div className="form-group col-sm">
-              <label htmlFor="password">Password</label>
-              <Field
-                type="password"
-                name="password"
-                placeholder="Password"
-                className="form-control"
-              />
-              {touched.password && errors.password && (
-                <p className="error-message">{errors.password}</p>
-              )}
-            </div>
-
-            <div className="form-group col-sm=">
-              <label htmlFor="confirmpassword">Confirm Password</label>
-              <Field
-                type="password"
-                className="form-control"
-                name="confirmpassword"
-                placeholder="Confirm Password"
-              />
-              {touched.confirmpassword && errors.confirmpassword && (
-                <p className="error-message">{errors.confirmpassword}</p>
-              )}
+            <div className="form-group">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="btn btn-warning btn-block"
+                style={{ color: "#545454" }}
+              >
+                Create
+              </button>
             </div>
           </div>
-          <div className="form-group">
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              class="btn btn-warning btn-block"
-              style={{ color: "#545454" }}
-            >
-              Create
-            </button>
-          </div>
-        </Form>
+        </div>
       </div>
-    </div>
-    <div className="d-flex justify-content-center mt-5">
+    </Form>
+    <div className="d-flex justify-content-center mt-1">
       {" "}
       <h3 style={{ color: "#545454" }}>
         Already have an Account?{" "}
@@ -171,19 +174,22 @@ const SigninFormUser = withFormik({
       })
   }),
   async handleSubmit(values, { resetForm, setErrors, setSubmitting, props }) {
-    console.log(values);
+    // console.log(values);
     try {
-      const res = await axios.post(`/employee/signup`, values);
-      console.log(res.data);
-      if (res.data.Status === "Error") {
-        setErrors({ email: "Email Already Exist" });
+      const res = await axios.post(`${env.api}/user`, values);
+      // console.log("Res.data: ", res.data.status);
+      if (res.data.status === "error ❗️ ❗️ ❗️ ") {
+        setErrors({
+          email: "Email May Already Exist",
+          phone_number: "Phone Number May Already Exist"
+        });
         setSubmitting(false);
         return;
       }
 
       const token = res.data.data.token;
 
-      localStorage.setItem("akoko_token", token);
+      localStorage.setItem("digisave_token", token);
       resetForm();
 
       Swal.fire({

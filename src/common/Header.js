@@ -23,7 +23,11 @@ export default class Header extends Component {
                 />
                 <span
                   className="align-middle"
-                  style={{ color: "#545454", fontSize: 40 }}
+                  style={{
+                    color: "#545454",
+                    fontSize: 40,
+                    fontFamily: "Baloo Bhai"
+                  }}
                 >
                   DigiSave
                 </span>
@@ -85,10 +89,10 @@ export default class Header extends Component {
             <Animated
               animationIn="shake"
               animationOut="shake"
-              animationInDuration="1000"
-              animationOutDuration="1000"
-              animationOutDelay="10000"
-              animationInDelay="5000"
+              animationInDuration={1000}
+              animationOutDuration={1000}
+              animationOutDelay={10000}
+              animationInDelay={5000}
             >
               <div style={{ fontFamily: "Montserrat" }}>
                 <Link to="/signup">

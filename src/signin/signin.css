@@ -28,5 +28,8 @@
 }
 
 .error-message {
-  color: red;
+  color: #f95759;
+  font-family: "Bad Script", cursive;
+  font-size: 1em;
+  font-weight: bold;
 }

@@ -6,7 +6,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div>
-        <div className="container border-top my-5">
+        <div className="container border-top my-5 ">
           <div className="row">
             <div className="col-sm">
               {" "}
@@ -21,13 +21,17 @@ export default class Footer extends Component {
                   />
                   <span
                     className="align-middle"
-                    style={{ color: "#545454", fontSize: 40 }}
+                    style={{
+                      color: "#545454",
+                      fontSize: 40,
+                      fontFamily: "Baloo Bhai"
+                    }}
                   >
                     DigiSave
                   </span>
                 </Link>
               </div>
-              <h5 style={{ fontFamily: "Cutive Mono" }}>
+              <div style={{ fontFamily: "Cutive Mono", color: "#545454" }}>
                 DigiSave (formerly piggybank.ng) is the largest online savings &
                 investing platform in Nigeria. For over 3 years, our customers
                 have saved and invested billions of Naira that they would
@@ -39,12 +43,12 @@ export default class Footer extends Component {
                   contact@digisave.com
                 </h5>
                 <h5> © 2016 - 2019 PiggyTech Global Limited - RC 1405222</h5>
-              </h5>
+              </div>
             </div>
             <div className="col-sm-auto">
               <h3
                 className="mt-5 text-center"
-                style={{ fontFamily: "Montserrat" }}
+                style={{ fontFamily: "Montserrat", color: "#545454" }}
               >
                 COMPANY
               </h3>
@@ -76,14 +80,14 @@ export default class Footer extends Component {
                   <i className="fab fa-instagram" />
                 </button>
                 <button type="button" className="btn text-warning p-2">
-                  <i class="fab fa-twitter-square" />
+                  <i className="fab fa-twitter-square" />
                 </button>
               </div>
             </div>
             <div className="col-sm-auto">
               <h3
                 className="mt-5 text-center"
-                style={{ fontFamily: "Montserrat" }}
+                style={{ fontFamily: "Montserrat", color: "#545454" }}
               >
                 QuickLinks
               </h3>

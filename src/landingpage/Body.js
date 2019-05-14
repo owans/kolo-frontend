@@ -76,11 +76,9 @@ export default class Body extends Component {
 
                 <button type="button" className="btn mx-5">
                   <img src={playstore01} alt="" />
-                  {/* <i class="fab fa-google-play" /> */}
                 </button>
                 <button type="button" className="btn mx-5">
                   <img src={applestore} alt="" />
-                  {/* <i class="fab fa-apple" /> */}
                 </button>
               </span>
             </div>
@@ -89,7 +87,7 @@ export default class Body extends Component {
             </div>
           </div>
         </div>
-        <div class="col-sm-auto d-flex justify-content-center top_margin">
+        <div className="col-sm-auto d-flex justify-content-center top_margin">
           <span
             className="align-middle"
             style={{
@@ -117,7 +115,7 @@ export default class Body extends Component {
           <h3 className="col-sm" style={{ fontSize: 40 }}>
             Save smartly & responsibly!
           </h3>
-          <div class="w-100" />
+          <div className="w-100" />
           <h6
             className="col-sm"
             style={{ fontFamily: "Cutive Mono", fontSize: 20 }}
@@ -128,10 +126,10 @@ export default class Body extends Component {
           </h6>
         </div>
         <div className="row d-flex justify-content-between">
-          <div class=" border-warning m-3" style={{ maxWidth: 400 }}>
-            <div class="card-body text-warning">
+          <div className=" border-warning m-3" style={{ maxWidth: 400 }}>
+            <div className="card-body text-warning">
               <h5
-                class="card-title"
+                className="card-title"
                 style={{
                   fontSize: 30,
                   fontFamily: "Montserrat",
@@ -141,7 +139,7 @@ export default class Body extends Component {
                 Enjoy quarterly savings
               </h5>
               <p
-                class="card-text"
+                className="card-text"
                 style={{
                   fontSize: 20,
                   fontFamily: "Montserrat",
@@ -154,10 +152,10 @@ export default class Body extends Component {
               </p>
             </div>
           </div>
-          <div class="border-warning m-3" style={{ maxWidth: 400 }}>
-            <div class="card-body text-warning">
+          <div className="border-warning m-3" style={{ maxWidth: 400 }}>
+            <div className="card-body text-warning">
               <h5
-                class="card-title"
+                className="card-title"
                 style={{
                   fontSize: 30,
                   fontFamily: "Montserrat",
@@ -167,7 +165,7 @@ export default class Body extends Component {
                 Reach multiple targets
               </h5>
               <p
-                class="card-text"
+                className="card-text"
                 style={{
                   fontSize: 20,
                   fontFamily: "Montserrat",
@@ -180,10 +178,10 @@ export default class Body extends Component {
               </p>
             </div>
           </div>
-          <div class="border-warning m-3" style={{ maxWidth: 400 }}>
-            <div class="card-body text-warning">
+          <div className="border-warning m-3" style={{ maxWidth: 400 }}>
+            <div className="card-body text-warning">
               <h5
-                class="card-title"
+                className="card-title"
                 style={{
                   fontSize: 30,
                   fontFamily: "Montserrat",
@@ -193,7 +191,7 @@ export default class Body extends Component {
                 Lock funds away
               </h5>
               <p
-                class="card-text"
+                className="card-text"
                 style={{
                   fontSize: 20,
                   fontFamily: "Montserrat",
