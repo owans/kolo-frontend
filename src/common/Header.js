@@ -91,7 +91,7 @@ export default class Header extends Component {
               animationInDelay="5000"
             >
               <div style={{ fontFamily: "Montserrat" }}>
-                <Link to="/signin">
+                <Link to="/signup">
                   <button
                     type="button"
                     className="btn btn-outline-warning px-3 py-3"

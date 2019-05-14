@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+import Header from "../common/Header";
+import Footer from "../common/Footer";
+import FormSignin from "./FormSignin";
 
 export default class extends Component {
   render() {
     return (
       <div>
-        <h1>Hello from Signin</h1>
+        <Header />
+        <FormSignin />
+        <Footer />
       </div>
     );
   }

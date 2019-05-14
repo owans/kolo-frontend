@@ -62,7 +62,7 @@ export default class Body extends Component {
                   animationInDelay="5000"
                 >
                   <div className="p-5 " style={{ fontFamily: "Baloo Bhai" }}>
-                    <Link to="/signin">
+                    <Link to="/signup">
                       <button
                         type="button"
                         className="btn border-0 btn-outline-warning px-3 py-3"
