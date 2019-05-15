@@ -7,6 +7,7 @@ import Signin from "./signin/Signin";
 import Login from "./login/Login";
 import Dashboard from "./dashboard/Dashboard";
 import Interest from "./interest/Interest";
+import Account from "./account/Account";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/signup" component={Signin} />
+          <Route path="/account" component={Account} />
           <Route path="/login" component={Login} />
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/interest" component={Interest} />
