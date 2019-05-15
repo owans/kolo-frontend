@@ -56,10 +56,10 @@ export default class Body extends Component {
                 <Animated
                   animationIn="shake"
                   animationOut="shake"
-                  animationInDuration="1000"
-                  animationOutDuration="1000"
-                  animationOutDelay="10000"
-                  animationInDelay="5000"
+                  animationInDuration={1000}
+                  animationOutDuration={1000}
+                  animationOutDelay={10000}
+                  animationInDelay={5000}
                 >
                   <div className="p-5 " style={{ fontFamily: "Baloo Bhai" }}>
                     <Link to="/signup">

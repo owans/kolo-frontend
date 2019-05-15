@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 import { Link, withRouter } from "react-router-dom";
+import env from "../env";
 // import "./signin.css";
 
 const app = ({ touched, errors, isSubmitting }) => (
@@ -78,12 +79,8 @@ const app = ({ touched, errors, isSubmitting }) => (
 const LoginFormUser = withFormik({
   mapPropsToValues(props) {
     return {
-      first_name: "",
-      last_name: "",
       email: props.email || "",
-      phone_number: "",
-      password: "",
-      confirmpassword: ""
+      password: ""
     };
   },
   validationSchema: Yup.object().shape({
@@ -97,27 +94,31 @@ const LoginFormUser = withFormik({
   async handleSubmit(values, { resetForm, setErrors, setSubmitting, props }) {
     console.log(values);
     try {
-      const res = await axios.post(`/employee/signup`, values);
-      console.log(res.data);
-      if (res.data.Status === "Error") {
-        setErrors({ email: "Email Already Exist" });
+      const res = await axios.post(`${env.api}/user/login`, values);
+
+      const token = res.data.token;
+
+      if (res.data.token === undefined) {
+        setErrors({
+          email: "Incorrect login details",
+          password: "Incorrect login details"
+        });
         setSubmitting(false);
         return;
       }
 
-      const token = res.data.data.token;
-
-      localStorage.setItem("akoko_token", token);
+      localStorage.setItem("digisave_signin", token);
       resetForm();
 
       Swal.fire({
-        text: "Signup Successful",
+        text: "Welcome",
         confirmButtonText: "OK"
       });
-      props.history.push("/dashboard");
+
+      props.history.push("/account");
     } catch (err) {
-      setSubmitting(false);
       console.log(err);
+      setSubmitting(false);
     }
   }
 })(app);

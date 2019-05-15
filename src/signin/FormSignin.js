@@ -189,14 +189,14 @@ const SigninFormUser = withFormik({
 
       const token = res.data.data.token;
 
-      localStorage.setItem("digisave_token", token);
+      localStorage.setItem("digisave_signin", token);
       resetForm();
 
       Swal.fire({
         text: "Signup Successful",
         confirmButtonText: "OK"
       });
-      props.history.push("/dashboard");
+      props.history.push("/account");
     } catch (err) {
       setSubmitting(false);
       console.log(err);
