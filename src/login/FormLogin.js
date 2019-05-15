@@ -92,7 +92,7 @@ const LoginFormUser = withFormik({
       .required("Password Is Required")
   }),
   async handleSubmit(values, { resetForm, setErrors, setSubmitting, props }) {
-    console.log(values);
+    // console.log(values);
     try {
       const res = await axios.post(`${env.api}/user/login`, values);
 
