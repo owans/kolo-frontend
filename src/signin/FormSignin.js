@@ -177,7 +177,7 @@ const SigninFormUser = withFormik({
     // console.log(values);
     try {
       const res = await axios.post(`${env.api}/user`, values);
-      // console.log("Res.data: ", res.data.status);
+      // console.log("Res: ", res);
       if (res.data.status === "error ❗️ ❗️ ❗️ ") {
         setErrors({
           email: "Email May Already Exist",
@@ -189,14 +189,15 @@ const SigninFormUser = withFormik({
 
       const token = res.data.data.token;
 
-      localStorage.setItem("digisave_signin", token);
+      localStorage.setItem("digisave_token", token);
       resetForm();
+
+      props.history.push("/account");
 
       Swal.fire({
         text: "Signup Successful",
         confirmButtonText: "OK"
       });
-      props.history.push("/account");
     } catch (err) {
       setSubmitting(false);
       console.log(err);
