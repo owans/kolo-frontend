@@ -92,13 +92,15 @@ const LoginFormUser = withFormik({
       .required("Password Is Required")
   }),
   async handleSubmit(values, { resetForm, setErrors, setSubmitting, props }) {
-    // console.log(values);
+    // console.log("login values: ", values);
     try {
       const res = await axios.post(`${env.api}/user/login`, values);
 
       const token = res.data.token;
 
-      if (res.data.token === undefined) {
+      // console.log("response after post: ", res);
+
+      if (res.data.message === "invalid account") {
         setErrors({
           email: "Incorrect login details",
           password: "Incorrect login details"
@@ -107,7 +109,19 @@ const LoginFormUser = withFormik({
         return;
       }
 
-      localStorage.setItem("digisave_signin", token);
+      if (res.data.message === "account not verified") {
+        Swal.fire({
+          text: "Please Verify Account",
+          confirmButtonText: "OK"
+        });
+        // console.log("response after account not found: ", res);
+        localStorage.setItem("digisave_token", token);
+        resetForm();
+        props.history.push("/account");
+        return;
+      }
+
+      localStorage.setItem("digisave_token", token);
       resetForm();
 
       Swal.fire({
@@ -115,7 +129,7 @@ const LoginFormUser = withFormik({
         confirmButtonText: "OK"
       });
 
-      props.history.push("/account");
+      props.history.push("/dashboard");
     } catch (err) {
       console.log(err);
       setSubmitting(false);
