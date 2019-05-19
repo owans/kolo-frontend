@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { Animated } from "react-animated-css";
 import landing07 from "../img/landing07.png";
 import playstore01 from "../img/playstore01.png";
@@ -7,7 +7,27 @@ import applestore from "../img/applestore.png";
 import shield from "../img/shield.png";
 import "./landingpage.css";
 
-export default class Body extends Component {
+class Body extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  async componentDidMount() {
+    try {
+      const token = localStorage.getItem("digisave_token");
+
+      if (!token) {
+        this.props.history.push("/");
+        return;
+      }
+      this.props.history.push("/account");
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
   render() {
     return (
       <div>
@@ -208,3 +228,5 @@ export default class Body extends Component {
     );
   }
 }
+
+export default withRouter(Body);
