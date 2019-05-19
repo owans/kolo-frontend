@@ -22,7 +22,7 @@ const app = ({ touched, errors, isSubmitting }) => (
     </div>
     <Form name="form">
       <div className="d-flex justify-content-center">
-        <div className="main_container " style={{ width: 800 }}>
+        <div className="main_container " style={{ width: 800, minWidth: 450 }}>
           <div className="form_container rounded">
             <div className="form-row">
               <div className=" form-group col-sm">
