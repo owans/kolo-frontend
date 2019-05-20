@@ -75,7 +75,7 @@ export default class BodyActivateSavings extends Component {
                 />
               </div>
               <small>
-                All funds go to your “Piggybank” wallet on PiggyVest
+                All funds go to your “KoloSave” wallet on KoloSave
               </small>
               <div className="form-group mt-2">
                 <button
@@ -89,7 +89,7 @@ export default class BodyActivateSavings extends Component {
               </div>
 
               <small>
-                PiggyVest uses the highest levels of Internet Security, and it
+                KoloSave uses the highest levels of Internet Security, and it
                 is secured by 256 bits SSL security encryption to ensure that
                 your information is completely protected.
               </small>

@@ -27,22 +27,22 @@ export default class Footer extends Component {
                       fontFamily: "Baloo Bhai"
                     }}
                   >
-                    DigiSave
+                    KoloSave
                   </span>
                 </Link>
               </div>
               <div style={{ fontFamily: "Cutive Mono", color: "#545454" }}>
-                DigiSave (formerly piggybank.ng) is the largest online savings &
+                KoloSave (formerly piggybank.ng) is the largest online savings &
                 investing platform in Nigeria. For over 3 years, our customers
                 have saved and invested billions of Naira that they would
                 normally be tempted to spend.
                 <h5 className="my-4">
                   {" "}
-                  Physical Office Address: No. 16, Boyle Street, Lagos Island,
-                  Lagos, Nigeria. 0700 933 933 933 (Mon-Fri from 9am-5pm) -
-                  contact@digisave.com
+                  Physical Office Address: No. 40, Winners Avenue, Eneka,
+                  Port Harcourt, Nigeria. 0700 945 900 945 (Mon-Fri from 9am-5pm) -
+                  contact@kolosave.com
                 </h5>
-                <h5> © 2016 - 2019 PiggyTech Global Limited - RC 1405222</h5>
+                <h5> © 2016 - 2019 KoloTech Global Limited - RC 1405222</h5>
               </div>
             </div>
             <div className="col-sm-auto">
@@ -99,7 +99,7 @@ export default class Footer extends Component {
                   <h6>AutoSave™</h6>
                 </Link>
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>DigiLink</h6>
+                  <h6>KoloLink</h6>
                 </Link>
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
                   <h6>Quick Save™</h6>

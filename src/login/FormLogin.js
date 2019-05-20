@@ -115,13 +115,13 @@ const LoginFormUser = withFormik({
           confirmButtonText: "OK"
         });
         // console.log("response after account not found: ", res);
-        localStorage.setItem("digisave_token", token);
+        localStorage.setItem("kolosave_token", token);
         resetForm();
         props.history.push("/account");
         return;
       }
 
-      localStorage.setItem("digisave_token", token);
+      localStorage.setItem("kolosave_token", token);
       resetForm();
 
       Swal.fire({

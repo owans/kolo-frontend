@@ -29,7 +29,7 @@ export default class Header extends Component {
                     fontFamily: "Baloo Bhai"
                   }}
                 >
-                  DigiSave
+                  KoloSave
                 </span>
               </Link>
             </div>

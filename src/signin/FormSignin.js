@@ -178,10 +178,10 @@ const SigninFormUser = withFormik({
     try {
       const res = await axios.post(`${env.api}/user`, values);
       // console.log("Res: ", res);
-      if (res.data.status === "error ❗️ ❗️ ❗️ ") {
+      if (res.data.status === "error") {
         setErrors({
-          email: "Email May Already Exist",
-          phone_number: "Phone Number May Already Exist"
+          email: "Email might already exist",
+          phone_number: "Phone number may already exist"
         });
         setSubmitting(false);
         return;
@@ -189,14 +189,14 @@ const SigninFormUser = withFormik({
 
       const token = res.data.data.token;
 
-      localStorage.setItem("digisave_token", token);
+      localStorage.setItem("kolosave_token", token);
       resetForm();
 
       props.history.push("/account");
 
       Swal.fire({
         text: "Signup Successful",
-        confirmButtonText: "OK"
+        confirmButtonText: "👍"
       });
     } catch (err) {
       setSubmitting(false);

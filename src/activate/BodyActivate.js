@@ -15,7 +15,7 @@ class BodyActivate extends Component {
 
   async componentDidMount() {
     try {
-      const token = localStorage.getItem("digisave_token");
+      const token = localStorage.getItem("kolosave_token");
       if (!token) {
         this.props.history.push("/");
         return;
@@ -55,7 +55,7 @@ class BodyActivate extends Component {
           <h1>{this.state.first_name}, pick an option.</h1>
         </div>
         <div className="d-flex justify-content-center">
-          <h6>You can manage all aspects of your finances with PiggyVest.</h6>
+          <h6>You can manage all aspects of your finances with Kolosave.</h6>
         </div>
         <div className="d-flex justify-content-center">
           <h6>Tap one of the options below and let's get started.</h6>

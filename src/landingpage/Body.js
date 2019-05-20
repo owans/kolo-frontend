@@ -16,7 +16,7 @@ class Body extends Component {
 
   async componentDidMount() {
     try {
-      const token = localStorage.getItem("digisave_token");
+      const token = localStorage.getItem("kolosave_token");
 
       if (!token) {
         this.props.history.push("/");
@@ -51,7 +51,7 @@ class Body extends Component {
                   className="col-sm text_01"
                   style={{ color: "#545454", fontSize: 30 }}
                 >
-                  DigiSave is your guide to financial security.
+                  KoloSave is your guide to financial security.
                 </div>
                 <div
                   className="col-sm text_01 my-5"
@@ -119,7 +119,7 @@ class Body extends Component {
             <h2>Your Security is our Priority </h2>
 
             <h6 className="mt-2">
-              DigiSave uses the highest levels of Internet Security,
+              KoloSave uses the highest levels of Internet Security,
             </h6>
 
             <h6> and it is secured by 256 bits SSL security encryption</h6>
@@ -140,7 +140,7 @@ class Body extends Component {
             className="col-sm"
             style={{ fontFamily: "Cutive Mono", fontSize: 20 }}
           >
-            DigiSave helps you reach your savings target much faster with
+            KoloSave helps you reach your savings target much faster with
             various savings types.{" "}
             <p>Plus you can even team up with others to reach joint goals.</p>
           </h6>
@@ -167,7 +167,7 @@ class Body extends Component {
                 }}
               >
                 Join over 100,000 users that use our quarterly savings feature
-                called "DigiSave" to reach their general/personal savings goals
+                called "KoloSave" to reach their general/personal savings goals
                 more quickly.
               </p>
             </div>

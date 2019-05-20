@@ -12,7 +12,7 @@ class Navbar extends Component {
   }
 
   logout() {
-    localStorage.removeItem("digisave_token");
+    localStorage.removeItem("kolosave_token");
     this.props.history.push("/");
   }
 
@@ -49,7 +49,7 @@ class Navbar extends Component {
                     fontFamily: "Baloo Bhai"
                   }}
                 >
-                  DigiSave
+                  KoloSave
                 </span>
               </Link>
             </div>
@@ -105,7 +105,7 @@ class Navbar extends Component {
                       className="btn text-warning"
                       style={{ fontSize: 20 }}
                     >
-                      WIthdraw
+                      Withdraw
                     </button>
                   </div>
                   <div className="dropdown-divider" />

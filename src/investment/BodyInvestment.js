@@ -41,7 +41,7 @@ class Body extends React.Component {
 
   async componentDidMount() {
     try {
-      const token = localStorage.getItem("digisave_token");
+      const token = localStorage.getItem("kolosave_token");
       if (!token) {
         this.props.history.push("/");
         return;
@@ -58,8 +58,8 @@ class Body extends React.Component {
       });
     } catch (err) {
       console.log(err);
-      if (localStorage.getItem("digisave_token")) {
-        localStorage.removeItem("digisave_token");
+      if (localStorage.getItem("kolosave_token")) {
+        localStorage.removeItem("kolosave_token");
       }
       return this.props.history.push("/");
     }
