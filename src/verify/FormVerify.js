@@ -24,7 +24,7 @@ class FormVerify extends Component {
 
   async componentDidMount() {
     try {
-      const token = localStorage.getItem("digisave_token");
+      const token = localStorage.getItem("kolosave_token");
       if (!token) {
         this.props.history.push("/");
         return;
@@ -36,7 +36,6 @@ class FormVerify extends Component {
         }
       });
 
-      // console.log("User Data: ", res.data.data._id);
       this.setState({
         loading: false,
         _id: res.data.data._id,
@@ -55,8 +54,6 @@ class FormVerify extends Component {
         this.props.history.push("/dashboard");
         return;
       }
-
-      // console.log("_id state", this.state._id);
 
       const bank_name = await axios.get(`https://api.paystack.co/bank`);
       this.setState({
@@ -77,8 +74,8 @@ class FormVerify extends Component {
       document.getElementById("select").innerHTML = list;
     } catch (err) {
       console.log(err);
-      if (localStorage.getItem("digisave_token")) {
-        localStorage.removeItem("digisave_token");
+      if (localStorage.getItem("kolosave_token")) {
+        localStorage.removeItem("kolosave_token");
       }
       return this.props.history.push("/");
     }
@@ -91,8 +88,6 @@ class FormVerify extends Component {
   }
 
   async banknameonChange(e) {
-    // console.log("bankname b4 req: ", this.state);
-    // console.log("paystack key: ", env.paystack_key);
     this.setState({
       bank_name: e.target.value
     });
@@ -106,11 +101,10 @@ class FormVerify extends Component {
         }
       }
     );
-    // console.log("verification res: ", res.data.data.account_name);
+
     this.setState({
       account_name: res.data.data.account_name
     });
-    // console.log("bankname method: ", this.state);
   }
 
   isFormValid() {
@@ -135,12 +129,12 @@ class FormVerify extends Component {
         return;
       }
 
-      const token = localStorage.getItem("digisave_token");
+      const token = localStorage.getItem("kolosave_token");
 
       let headers = {
         Authorization: token
       };
-      // console.log("handlesubmit method: ", this.state);
+      
       await axios.post(
         `${env.api}/account`,
         {
@@ -154,7 +148,7 @@ class FormVerify extends Component {
           headers: headers
         }
       );
-      // console.log("handlesubmit res: ", res);
+     
       this.setState({
         account_number: "",
         bank_name: "",
@@ -175,9 +169,6 @@ class FormVerify extends Component {
     if (this.state.loading) {
       return <h1> </h1>;
     }
-    // console.log("Account Number: ", this.state.account_number);
-    // console.log("Bank Name: ", this.state.bank_name);
-    // console.log("Account Name: ", this.state.account_name);
 
     return (
       <div className="signin_body ">

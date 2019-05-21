@@ -190,6 +190,7 @@ const SigninFormUser = withFormik({
       const token = res.data.data.token;
 
       localStorage.setItem("kolosave_token", token);
+      
       resetForm();
 
       props.history.push("/account");
