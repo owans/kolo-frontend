@@ -1,0 +1,35 @@
+.signin_body {
+  color: #f4f6f7 !important;
+  font-family: "Baloo Bhai", cursive;
+  margin-top: 10rem;
+  padding: 2rem;
+}
+
+.main_container :hover {
+  background-color: rgba(169, 169, 169, 1);
+}
+
+.form_container {
+  background-color: rgba(211, 211, 211, 0.5);
+  width: 62%;
+  margin: auto;
+  padding: 2%;
+  margin-bottom: 2rem;
+  color: #545454;
+}
+
+.form-group input {
+  background-color: rgba(169, 169, 169, 0.5);
+  font-family: "Cutive Mono";
+}
+
+.form-group select {
+  background-color: rgba(169, 169, 169, 0.5);
+}
+
+.error-message {
+  color: #f95759;
+  font-family: "Bad Script", cursive;
+  font-size: 1em;
+  font-weight: bold;
+}
