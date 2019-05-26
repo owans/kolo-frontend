@@ -1,9 +1,43 @@
 .landing_body {
-  color: #545454 !important;
-  font-family: "Baloo Bhai", cursive;
-  margin-top: 10rem;
+  /* color: #144499 !important; */
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 3rem;
   padding: 2rem;
 }
-.text_01 {
-  font-family: "Cutive Mono", monospace;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #144499 !important;
+}
+
+#create2 {
+  background: #30c57b;
+  color: white;  
+  font-size: 18px !important;
+}
+
+#create2:hover {
+  background: white;
+  border-color: #144499;
+  color: #144499;        
+}
+
+#savings p {
+  color: #444;
+  font-size: 16px;
+}
+
+#savings img {
+  height: 40px;
+}
+
+#bg-image {
+  background-image: url(https://storage.googleapis.com/piggybankservice.appspot.com/statics/woman-header-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.top_margin{
+  margin-top: 25px!important;
 }

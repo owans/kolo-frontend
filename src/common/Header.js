@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Animated } from "react-animated-css";
-import logo from "../logo.png";
+import "./header.css";
+import logo from "../img/undraw_savings_hjfl.svg";
 
 export default class Header extends Component {
   render() {
     return (
       <div>
         <nav
-          className="navbar navbar-expand-lg fixed-top border-bottom shadow-lg navbar-light"
+          className="navbar navbar-expand-lg fixed-top border-bottom navbar-light"
           style={{ backgroundColor: "#f4f6f7" }}
         >
           <div className="container">
             <div className=" col-sm d-flex justify-content-start">
-              <Link to="/">
+              <Link to="/" style={{textDecoration: "none"}}>
                 <img
                   src={logo}
                   className="navbar-brand"
@@ -24,9 +25,9 @@ export default class Header extends Component {
                 <span
                   className="align-middle"
                   style={{
-                    color: "#545454",
-                    fontSize: 40,
-                    fontFamily: "Baloo Bhai"
+                    color: "#144499",
+                    fontSize: 25,
+                    fontFamily: "Varela Round"
                   }}
                 >
                   KoloSave
@@ -34,52 +35,52 @@ export default class Header extends Component {
               </Link>
             </div>
 
-            <div style={{ fontFamily: "Montserrat" }}>
+            <div style={{ fontFamily: "Varela Round" }}>
               <button
                 type="button"
-                className="btn text-warning"
-                style={{ fontSize: 20 }}
+                className="btn text-primary"
+                style={{ fontSize: 16 }}
               >
                 About
               </button>
             </div>
 
-            <div style={{ fontFamily: "Montserrat" }}>
+            <div style={{ fontFamily: "Varela Round" }}>
               <button
                 type="button"
-                className="btn text-warning"
-                style={{ fontSize: 20 }}
+                className="btn text-primary"
+                style={{ fontSize: 16 }}
               >
                 Stories
               </button>
             </div>
 
-            <div style={{ fontFamily: "Montserrat" }}>
+            <div style={{ fontFamily: "Varela Round" }}>
               <button
                 type="button"
-                className="btn text-warning"
-                style={{ fontSize: 20 }}
+                className="btn text-primary"
+                style={{ fontSize: 16 }}
               >
                 FAQ
               </button>
             </div>
 
-            <div style={{ fontFamily: "Montserrat" }}>
+            <div style={{ fontFamily: "Varela Round" }}>
               <button
                 type="button"
-                className="btn text-warning"
-                style={{ fontSize: 20 }}
+                className="btn text-primary"
+                style={{ fontSize: 16 }}
               >
                 Blog
               </button>
             </div>
 
-            <div style={{ fontFamily: "Montserrat" }}>
+            <div style={{ fontFamily: "Varela Round" }}>
               <Link to="/login">
                 <button
                   type="button"
-                  className="btn text-warning"
-                  style={{ fontSize: 20 }}
+                  className="btn text-primary"
+                  style={{ fontSize: 16 }}
                 >
                   Login
                 </button>
@@ -94,12 +95,12 @@ export default class Header extends Component {
               animationOutDelay={10000}
               animationInDelay={5000}
             >
-              <div style={{ fontFamily: "Montserrat" }}>
+              <div style={{ fontFamily: "Varela Round" }}>
                 <Link to="/signup">
                   <button
                     type="button"
-                    className="btn btn-outline-warning px-3 py-3"
-                    style={{ color: "#545454", fontSize: 20 }}
+                    id="create"
+                    className="btn btn-outline-primary px-3 py-3"
                   >
                     Create a Free Account
                   </button>

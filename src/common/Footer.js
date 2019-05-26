@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "../logo.png";
+import logo from "../img/undraw_savings_hjfl.svg";
 
 export default class Footer extends Component {
   render() {
@@ -22,9 +22,9 @@ export default class Footer extends Component {
                   <span
                     className="align-middle"
                     style={{
-                      color: "#545454",
-                      fontSize: 40,
-                      fontFamily: "Baloo Bhai"
+                      color: "#144499",
+                      fontSize: 25,
+                      fontFamily: "Varela Round"
                     }}
                   >
                     KoloSave
@@ -36,19 +36,19 @@ export default class Footer extends Component {
                 investing platform in Nigeria. For over 3 years, our customers
                 have saved and invested billions of Naira that they would
                 normally be tempted to spend.
-                <h5 className="my-4">
+                <p className="my-4">
                   {" "}
                   Physical Office Address: No. 40, Winners Avenue, Eneka,
-                  Port Harcourt, Nigeria. 0700 945 900 945 (Mon-Fri from 9am-5pm) -
-                  contact@kolosave.com
-                </h5>
-                <h5> © 2016 - 2019 KoloTech Global Limited - RC 1405222</h5>
+                  Port Harcourt, Nigeria. <b>0700 945 900 945 (Mon-Fri from 9am-5pm) -
+                  contact@kolosave.com</b>
+                </p>
+                <p> © 2016 - 2019 KoloTech Global Limited - RC 1405222</p>
               </div>
             </div>
             <div className="col-sm-auto">
               <h3
                 className="mt-5 text-center"
-                style={{ fontFamily: "Montserrat", color: "#545454" }}
+                style={{ fontFamily: "Varela Round", color: "#545454" }}
               >
                 COMPANY
               </h3>
@@ -57,16 +57,16 @@ export default class Footer extends Component {
                 style={{ fontFamily: "Montserrat" }}
               >
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>About</h6>
+                  <p>About</p>
                 </Link>
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>FAQs</h6>
+                  <p>FAQs</p>
                 </Link>
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>Terms of Use</h6>
+                  <p>Terms of Use</p>
                 </Link>
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>Privacy Policy</h6>
+                  <p>Privacy Policy</p>
                 </Link>
               </div>
               <div
@@ -74,20 +74,20 @@ export default class Footer extends Component {
                 style={{ color: "#545454" }}
               >
                 <button type="button" className="btn text-warning p-2">
-                  <i className="fab fa-facebook" />
+                  <i className="fab fa-facebook" style={{color: '#144499'}}/>
                 </button>{" "}
                 <button type="button" className="btn text-warning p-2">
-                  <i className="fab fa-instagram" />
+                  <i className="fab fa-instagram" style={{color: '#144499'}}/>
                 </button>
                 <button type="button" className="btn text-warning p-2">
-                  <i className="fab fa-twitter-square" />
+                  <i className="fab fa-twitter-square" style={{color: '#144499'}} />
                 </button>
               </div>
             </div>
             <div className="col-sm-auto">
               <h3
                 className="mt-5 text-center"
-                style={{ fontFamily: "Montserrat", color: "#545454" }}
+                style={{ fontFamily: "Varela Round", color: "#545454" }}
               >
                 QuickLinks
               </h3>
@@ -96,22 +96,22 @@ export default class Footer extends Component {
                 style={{ fontFamily: "Montserrat", color: "#545454" }}
               >
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>AutoSave™</h6>
+                  <p>AutoSave™</p>
                 </Link>
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>KoloLink</h6>
+                  <p>KoloLink</p>
                 </Link>
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>Quick Save™</h6>
+                  <p>Quick Save™</p>
                 </Link>
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>SafeLock™</h6>
+                  <p>SafeLock™</p>
                 </Link>
                 <Link to="" style={{ color: "#545454" }}>
-                  <h6>Withdrawals & Breaking</h6>
+                  <p>Withdrawals & Breaking</p>
                 </Link>
                 <Link to="" className="my-1" style={{ color: "#545454" }}>
-                  <h6>Salary Management</h6>
+                  <p>Salary Management</p>
                 </Link>
               </div>
             </div>
