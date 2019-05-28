@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../logo.png";
+import logo from "../img/undraw_savings_hjfl.svg";
 import { Link, withRouter } from "react-router-dom";
 
 class Navbar extends Component {
@@ -7,7 +7,7 @@ class Navbar extends Component {
     super(props);
 
     this.state = {};
-
+    
     this.logout = this.logout.bind(this);
   }
 
@@ -44,9 +44,9 @@ class Navbar extends Component {
                 <span
                   className=" align-middle"
                   style={{
-                    color: "#545454",
-                    fontSize: 40,
-                    fontFamily: "Baloo Bhai"
+                    color: "#144499",
+                    fontSize: 25,
+                    fontFamily: "Varela Round"
                   }}
                 >
                   KoloSave
@@ -59,7 +59,7 @@ class Navbar extends Component {
                 <button
                   type="button"
                   style={{ fontSize: 20, fontFamily: "Montserrat" }}
-                  className="btn btn-outline-warning  my-2 dropdown-toggle"
+                  className="btn btn-outline-primary  my-2 dropdown-toggle"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
@@ -68,13 +68,13 @@ class Navbar extends Component {
                 </button>
                 <div
                   className="dropdown-menu"
-                  style={{ backgroundColor: "#f4f6f7" }}
+                  style={{ backgroundColor: "#144499" }}
                 >
                   <div style={{ fontFamily: "Montserrat" }}>
                     <Link to="/dashboard">
                       <button
                         type="button"
-                        className="btn text-warning"
+                        className="btn btn-outline-primary text-white"
                         style={{ fontSize: 20 }}
                       >
                         Dashboard
@@ -84,7 +84,7 @@ class Navbar extends Component {
                   <div style={{ fontFamily: "Montserrat" }}>
                     <button
                       type="button"
-                      className="btn text-warning"
+                      className="btn btn-outline-primary text-white"
                       style={{ fontSize: 20 }}
                     >
                       Interest
@@ -93,7 +93,7 @@ class Navbar extends Component {
                   <div style={{ fontFamily: "Montserrat" }}>
                     <button
                       type="button"
-                      className="btn text-warning"
+                      className="btn btn-outline-primary text-white"
                       style={{ fontSize: 20 }}
                     >
                       Transaction
@@ -102,7 +102,7 @@ class Navbar extends Component {
                   <div style={{ fontFamily: "Montserrat" }}>
                     <button
                       type="button"
-                      className="btn text-warning"
+                      className="btn btn-outline-primary text-white"
                       style={{ fontSize: 20 }}
                     >
                       Withdraw
@@ -112,7 +112,7 @@ class Navbar extends Component {
                   <div style={{ fontFamily: "Montserrat" }}>
                     <button
                       type="button"
-                      className="btn text-warning"
+                      className="btn btn-outline-primary text-white"
                       style={{ fontSize: 20 }}
                     >
                       Settings
@@ -123,7 +123,7 @@ class Navbar extends Component {
 
               <button
                 type="button"
-                className=" btn btn-outline-warning my-2 my-sm-0 border-0"
+                className=" btn btn-outline-primary my-2 my-sm-0 border-0"
                 style={{ fontSize: 15, fontFamily: "Montserrat" }}
                 onClick={this.logout}
               >
