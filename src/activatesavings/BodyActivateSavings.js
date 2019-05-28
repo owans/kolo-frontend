@@ -14,7 +14,7 @@ export default class BodyActivateSavings extends Component {
       <div style={{ fontFamily: "Montserrat" }}>
         <div className="row justify-content-center">
           <h1
-            className="float-center text-warning"
+            className="float-center text-primary"
             style={{ marginTop: "10rem", fontFamily: "Baloo Bhai" }}
           >
             The right way to save
@@ -29,7 +29,7 @@ export default class BodyActivateSavings extends Component {
               <img className="card-img-top " src={activatesaving} alt="Piggy" />
               <div className="card-body">
                 <h5 className="mb-4">
-                  Titi, build your savings on your terms using our “Piggybank”
+                  Titi, build your savings on your terms using our “Kolosave”
                   wallet.
                 </h5>
                 <h6 className="card-text">
@@ -81,7 +81,7 @@ export default class BodyActivateSavings extends Component {
                 <button
                   type="submit"
                   value="submit"
-                  className="btn btn-warning btn-block"
+                  className="btn btn-primary btn-block"
                   style={{ color: "#545454" }}
                 >
                   Submit
