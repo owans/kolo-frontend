@@ -5,15 +5,14 @@ import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 import { Link, withRouter } from "react-router-dom";
 import env from "../env";
-// import "./signin.css";
 
 const app = ({ touched, errors, isSubmitting }) => (
   <div className="signin_body ">
     <div className="d-flex justify-content-center">
-      <h1 style={{ color: "#545454" }}>Secure Login</h1>
+      <h1 style={{ color: "#144499" }}>Secure Login</h1>
     </div>
     <div className="d-flex justify-content-center mb-5">
-      <h6 style={{ color: "#545454" }}>It's time to Save & Invest</h6>
+      <h6 style={{ color: "#144499" }}>It's time to Save & Invest</h6>
     </div>
     <Form name="form">
       <div className="d-flex justify-content-center">
@@ -48,8 +47,8 @@ const app = ({ touched, errors, isSubmitting }) => (
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn btn-warning btn-block"
-                style={{ color: "#545454" }}
+                className="btn btn-primary btn-block"
+                style={{ color: "#fff" }}
               >
                 Login
               </button>
@@ -63,15 +62,15 @@ const app = ({ touched, errors, isSubmitting }) => (
       <Link to="/signup">
         <button
           type="button"
-          className="btn btn-warning px-3 "
-          style={{ color: "#545454", fontSize: 20 }}
+          className="btn btn-primary px-3 "
+          style={{ color: "#fff", fontSize: 20 }}
         >
           Create an Account Instead
         </button>
       </Link>
     </div>
     <div className="d-flex justify-content-center mt-2">
-      <h6 style={{ color: "#545454" }}>Forgot Password?</h6>
+      <h6 style={{ color: "144499" }}>Forgot Password?</h6>
     </div>
   </div>
 );
