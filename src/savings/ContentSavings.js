@@ -21,7 +21,7 @@ class ContentSavings extends Component {
           </Link>
           Savings™
           <Link to="#">
-            <i className="fas fa-sync-alt text-warning" />
+            <i className="fas fa-sync-alt text-primary" />
           </Link>
         </h4>
 
@@ -33,7 +33,7 @@ class ContentSavings extends Component {
             >
               <div className="card-header">
                 <i className="fas fa-piggy-bank mx-3" />
-                Piggybank™ (10% p.a)
+                Kolosave™ (10% p.a)
               </div>
               <div className="card-body text-success">
                 <h5 className="card-title">
