@@ -5,10 +5,10 @@ class ContentDashboard extends Component {
   render() {
     return (
       <div>
-        <h1 style={{ marginTop: "5rem", padding: "3rem", color: "#545454" }}>
+        <h1 style={{ marginTop: "5rem", padding: "3rem", color: "#144499" }}>
           Savings & Investments{" "}
           <Link to="#">
-            <i className="fas fa-sync-alt text-warning" />
+            <i className="fas fa-sync-alt text-primary" />
           </Link>
         </h1>
 
@@ -16,27 +16,27 @@ class ContentDashboard extends Component {
           <div className="row">
             <div className="col-sm">
               <div
-                className="card my-5 rounded border-warning border-top-0 border-left-0"
+                className="card my-5 rounded border-primary border-top-0 border-left-0"
                 style={{
-                  backgroundColor: "#FFF9C4"
-                  // width: "30rem"
+                  backgroundColor: "#FF6F61FF"
+                 
                 }}
               >
                 <Link
                   to="/savings"
                   style={{
                     textDecoration: "none",
-                    color: "#545454",
+                    color: "#ffffff",
                     fontFamily: "Montserrat"
                   }}
                 >
                   <div className="card-body">
-                    <h5 className="card-title">₦ 0.00</h5>
-                    <p className="card-text">
+                    <h5 className="card-title text-white">₦ 0.00</h5>
+                    <p className="card-text text-white">
                       View, manage or topup your savings
                     </p>
                     <h6
-                      className="btn btn-outline-warning"
+                      className="btn btn-outline-primary text-white"
                       style={{
                         fontFamily: "Montserrat"
                       }}
@@ -51,23 +51,23 @@ class ContentDashboard extends Component {
               {" "}
               <div
                 className="card my-5 rounded border-warning border-top-0 border-left-0"
-                style={{ backgroundColor: "#B2EBF2" }}
+                style={{ backgroundColor: "#963CBDFF" }}
               >
                 <Link
                   to="/investment"
                   style={{
                     textDecoration: "none",
-                    color: "#545454",
+                    color: "#144499",
                     fontFamily: "Montserrat"
                   }}
                 >
                   <div className="card-body">
-                    <h5 className="card-title">₦ 0.00</h5>
-                    <p className="card-text">
+                    <h5 className="card-title text-white">₦ 0.00</h5>
+                    <p className="card-text text-white">
                       Manage, trade or track your investments
                     </p>
                     <h6
-                      className="btn btn-outline-warning"
+                      className="btn btn-outline-primary text-white"
                       style={{
                         fontFamily: "Montserrat"
                       }}
@@ -86,25 +86,26 @@ class ContentDashboard extends Component {
             <div className="col-sm">
               {" "}
               <div
-                className="card rounded border-warning border-top-0 border-left-0"
-                style={{ backgroundColor: "#F0FFFF" }}
+                className="card rounded border-outline-primary border-top-0 border-left-0"
+                style={{ backgroundColor: "#144499" }}
               >
                 <Link
                   to="/activate"
                   style={{
                     textDecoration: "none",
-                    color: "#545454",
+                    color: "#144499",
                     fontFamily: "Montserrat"
                   }}
                 >
                   <div className="card-body">
-                    <h5 className="card-title">Activate Your Account</h5>
-                    <p className="card-text">
+                    <h5 className="card-title text-white">Activate Your Account</h5>
+                    <p className="card-text text-white">
                       Activate Your Account to Start Saving/Earning
                     </p>
                     <h6
-                      className="btn btn-outline-warning"
+                      className="btn btn-outline-primary text-white"
                       style={{
+                        backgroundColor: "#144499",
                         fontFamily: "Montserrat"
                       }}
                     >

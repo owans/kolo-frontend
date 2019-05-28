@@ -27,10 +27,6 @@ class BodyDashboard extends React.Component {
     mql.addListener(this.mediaQueryChanged);
   }
 
-  // componentWillUnmount() {
-  //   this.state.mql.removeListener(this.mediaQueryChanged);
-  // }
-
   onSetSidebarOpen(open) {
     this.setState({ sidebarOpen: open });
   }
@@ -70,8 +66,8 @@ class BodyDashboard extends React.Component {
       <div>
         <Sidebar
           sidebar={
-            <div style={{ color: "#545454", fontFamily: "Montserrat" }}>
-              <h1 style={{ color: "#545454", fontFamily: "Sriracha" }}>
+            <div style={{ color: "#144499", fontFamily: "Montserrat" }}>
+              <h1 style={{ color: "144499", fontFamily: "Sriracha" }}>
                 Hi {this.state.first_name}
               </h1>
               <h5>{this.state.email}</h5>
@@ -80,7 +76,7 @@ class BodyDashboard extends React.Component {
                 <Link to="/dashboard">
                   <button
                     type="button"
-                    className=" btn btn-outline-warning  border-0"
+                    className=" btn btn-outline-primary  border-0"
                     style={{ fontSize: 20 }}
                   >
                     Dashboard
@@ -91,7 +87,7 @@ class BodyDashboard extends React.Component {
                 <i className="fas fa-chart-pie mx-3" />
                 <button
                   type="button"
-                  className="btn btn-outline-warning  border-0"
+                  className="btn btn-outline-primary  border-0"
                   style={{ fontSize: 20 }}
                 >
                   Interest
@@ -101,7 +97,7 @@ class BodyDashboard extends React.Component {
                 <i className="fas fa-money-bill-wave mx-3" />
                 <button
                   type="button"
-                  className="btn btn-outline-warning border-0"
+                  className="btn btn-outline-primary border-0"
                   style={{ fontSize: 20 }}
                 >
                   Transaction
@@ -111,17 +107,17 @@ class BodyDashboard extends React.Component {
                 <i className="fas fa-piggy-bank mx-3" />
                 <button
                   type="button"
-                  className="btn btn-outline-warning border-0"
+                  className="btn btn-outline-primary border-0"
                   style={{ fontSize: 20 }}
                 >
-                  WIthdraw
+                  Withdraw
                 </button>
               </div>
               <div>
                 <i className="fas fa-cogs mx-3" />
                 <button
                   type="button"
-                  className="btn btn-outline-warning border-0"
+                  className="btn btn-outline-primary border-0"
                   style={{ fontSize: 20 }}
                 >
                   Settings
@@ -134,8 +130,8 @@ class BodyDashboard extends React.Component {
           onSetOpen={this.onSetSidebarOpen}
           styles={{
             sidebar: {
-              color: "#545454",
-              fontFamily: "Baloo Bhai",
+              color: "#144499",
+              fontFamily: "Varela Round",
               marginTop: "5.5rem",
               padding: "1rem",
               backgroundColor: "#f4f6f7"
