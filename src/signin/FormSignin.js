@@ -13,10 +13,10 @@ const phoneRegex = RegExp(/^[0]\d{10}$/);
 const app = ({ touched, errors, isSubmitting }) => (
   <div className="signin_body ">
     <div className="d-flex justify-content-center">
-      <h1 style={{ color: "#545454" }}>Create a Secure Account</h1>
+      <h1 style={{ color: "#144499" }}>Create a Secure Account</h1>
     </div>
     <div className="d-flex justify-content-center mb-5">
-      <h6 style={{ color: "#545454" }}>
+      <h6 style={{ color: "#144499" }}>
         Welcome to the future of Savings & Investments
       </h6>
     </div>
@@ -112,8 +112,8 @@ const app = ({ touched, errors, isSubmitting }) => (
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn btn-warning btn-block"
-                style={{ color: "#545454" }}
+                className="btn btn-primary btn-block"
+                style={{ color: "#fff" }}
               >
                 Create
               </button>
@@ -124,16 +124,16 @@ const app = ({ touched, errors, isSubmitting }) => (
     </Form>
     <div className="d-flex justify-content-center mt-1">
       {" "}
-      <h3 style={{ color: "#545454" }}>
+      <h3 style={{ color: "#144499" }}>
         Already have an Account?{" "}
-        <Link to="/login" className="text-warning">
+        <Link to="/login" className="text-info">
           Login
         </Link>
       </h3>
     </div>
     <div className="d-flex justify-content-center">
-      <h6 style={{ color: "#545454" }}>
-        By continuing, I agree to PiggyVest's Terms of Use & Privacy.
+      <h6 style={{ color: "#144499" }}>
+        By continuing, I agree to Kolosave's Terms of Use & Privacy.
       </h6>
     </div>
   </div>
