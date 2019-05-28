@@ -11,14 +11,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #create2 {
-  background: #30c57b;
-  color: white;  
+  background: #144499;
+  color: #fff;  
   font-size: 18px !important;
 }
 
 #create2:hover {
-  background: white;
-  border-color: #144499;
+  background: #144499;
+  border-color: #fff;
   color: #144499;        
 }
 
@@ -40,4 +40,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .top_margin{
   margin-top: 25px!important;
+}
+
+@media only screen and (min-device-width: 250px) and (max-device-width: 800px){
+  section #bg-image{
+    background-image: none;
+  }
+  section #savings{
+    margin-top: 10px;
+  }
+  #remove-shield #shield-image img{
+    background-image: none;
+  }
 }

@@ -3,7 +3,6 @@ import { Link, withRouter } from "react-router-dom";
 import { Animated } from "react-animated-css";
 import playstore01 from "../img/android.webp";
 import applestore from "../img/ios.webp";
-import shield from "../img/shield.png";
 import "./landingpage.css";
 
 class Body extends Component {
@@ -47,9 +46,9 @@ class Body extends Component {
                       animationOutDelay={10000}
                       animationInDelay={5000}
                       >
-                    <button className="btn btn-lg px-4 py-2 mb-3" 
+                    <button className="btn btn-lg btn-outline-primary px-4 py-2 mb-3" 
                     id="create2"><Link to="/signup" 
-                    style={{textDecoration: "none"}}
+                    style={{textDecoration: "none", color: "#fff"}}
                     >
                     Create a Free Account
                     </Link>
@@ -65,7 +64,7 @@ class Body extends Component {
             </div>
         </section>
 
-        <div className="col-sm-auto d-flex justify-content-left">
+        <div className="col-sm-auto d-flex justify-content-left" id="remove-shield">
           <span
             className="align-middle"
             style={{
@@ -87,7 +86,7 @@ class Body extends Component {
               fraud.
             </p>
           </span>
-          <img src={shield} alt="" />
+        
         </div>
         <div className="col-sm-auto d-flex justify-content-end top_margin">
           <span
