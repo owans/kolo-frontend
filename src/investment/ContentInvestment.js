@@ -24,7 +24,7 @@ class ContentInvestment extends Component {
           </Link>
           Investify™
           <Link to="#">
-            <i className="fas fa-sync-alt text-warning" />
+            <i className="fas fa-sync-alt text-primary" />
           </Link>
         </h4>
         <div className="card-columns">

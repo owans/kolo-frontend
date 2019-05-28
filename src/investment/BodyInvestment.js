@@ -27,10 +27,6 @@ class Body extends React.Component {
     mql.addListener(this.mediaQueryChanged);
   }
 
-  // componentWillUnmount() {
-  //   this.state.mql.removeListener(this.mediaQueryChanged);
-  // }
-
   onSetSidebarOpen(open) {
     this.setState({ sidebarOpen: open });
   }
@@ -80,7 +76,7 @@ class Body extends React.Component {
                 <Link to="/dashboard">
                   <button
                     type="button"
-                    className=" btn btn-outline-warning  border-0"
+                    className=" btn btn-outline-primary  border-0"
                     style={{ fontSize: 20 }}
                   >
                     Dashboard
@@ -91,7 +87,7 @@ class Body extends React.Component {
                 <i className="fas fa-chart-pie mx-3" />
                 <button
                   type="button"
-                  className="btn btn-outline-warning  border-0"
+                  className="btn btn-outline-primary  border-0"
                   style={{ fontSize: 20 }}
                 >
                   Interest
@@ -101,7 +97,7 @@ class Body extends React.Component {
                 <i className="fas fa-money-bill-wave mx-3" />
                 <button
                   type="button"
-                  className="btn btn-outline-warning border-0"
+                  className="btn btn-outline-primary border-0"
                   style={{ fontSize: 20 }}
                 >
                   Transaction
@@ -111,7 +107,7 @@ class Body extends React.Component {
                 <i className="fas fa-piggy-bank mx-3" />
                 <button
                   type="button"
-                  className="btn btn-outline-warning border-0"
+                  className="btn btn-outline-primary border-0"
                   style={{ fontSize: 20 }}
                 >
                   WIthdraw
@@ -121,7 +117,7 @@ class Body extends React.Component {
                 <i className="fas fa-cogs mx-3" />
                 <button
                   type="button"
-                  className="btn btn-outline-warning border-0"
+                  className="btn btn-outline-primary border-0"
                   style={{ fontSize: 20 }}
                 >
                   Settings
