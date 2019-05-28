@@ -125,7 +125,7 @@ const LoginFormUser = withFormik({
 
       Swal.fire({
         text: "Welcome",
-        confirmButtonText: "OK"
+        confirmButtonText: "👍"
       });
 
       props.history.push("/dashboard");
