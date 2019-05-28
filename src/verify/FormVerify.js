@@ -173,14 +173,14 @@ class FormVerify extends Component {
     return (
       <div className="signin_body ">
         <div className="d-flex justify-content-center">
-          <h1 style={{ color: "#545454" }}>
+          <h1 style={{ color: "#144499" }}>
             {this.state.first_name === ""
               ? `Welcome, set your withdrawal bank account`
               : `${this.state.first_name}, set your withdrawal bank account`}
           </h1>
         </div>
         <div className="d-flex justify-content-center mb-5">
-          <h6 style={{ color: "#545454" }}>
+          <h6 style={{ color: "#144499" }}>
             Why do you have to set a withdrawal bank? It's simple, in order to
             withdraw the money you save & invest on PiggyVest, you need to set a
             withdrawal bank account. This is where your money returns to after
@@ -234,8 +234,8 @@ class FormVerify extends Component {
                   type="submit"
                   value="submit"
                   onClick={this.handleSubmit}
-                  className="btn btn-warning btn-block"
-                  style={{ color: "#545454" }}
+                  className="btn btn-primary btn-block"
+                  style={{ color: "#fff" }}
                 >
                   Verify Bank
                 </button>
